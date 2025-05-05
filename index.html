@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <input id="taskName">
+    <h1>Task Manager</h1>
+    <label for="taskName">Task Name</label>
+    <input id="taskName"/>
+    <label for="priority">Priority Level?</label>
     <select id="priority">
         <option>High</option>
         <option>Medium</option>
         <option>Low</option>
     </select>
-    <select id="important">
-        <option>Important</option>
-        <option>Not Important</option>
-    </select>
-    <input id="date">
+    <label for="important">Important?</label>
+    <input type="checkbox" id="important"/>
     <button id="submit">Submit</button>
     <div id="taskManager"></div>
 </body>
